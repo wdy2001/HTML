@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        table 整张表格
+            thead 表头
+            tbody 表体
+            tfoot 表尾
+                tr 表格中一行
+                    td 行中的一个单元格
+                    th 自带加粗、居中效果的单元格
+
+        表格标签跨行
+            rowspan 跨行，其后数字为占用行数
+            colspan 跨列，其后数字为占用列数
+
+    -->
+    <h3 style="text-align: center;">员工技能竞赛评分表</h3>
+    <table style="border: 1px solid black;width: 500px;margin: 0 auto;">
+        <!-- <thead>员工技能竞赛评分表</thead> -->
+         <br>
+        <tbody>
+            <tr>
+                <th style="border: 1px solid black;">排名</th>
+                <th style="border: 1px solid black;">姓名</th>
+                <th style="border: 1px solid black;">分数</th>
+                <th style="border: 1px solid black;width: 200px;">备注</th>
+                
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;">1</td>
+                <td style="border: 1px solid black;">张小明</td>
+                <td style="border: 1px solid black;">100</td>
+                <td rowspan="6" style="border: 1px solid black;">前三名升职加薪</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;">2</td>
+                <td style="border: 1px solid black;">李小东</td>
+                <td style="border: 1px solid black;">99</td>
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;">3</td>
+                <td style="border: 1px solid black;">王小虎</td>
+                <td style="border: 1px solid black;">98</td>
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;">总人数</td>
+                <td colspan="2" style="border: 1px solid black;">2000</td>
+                <!-- <td style="border: 1px solid black;">98</td> -->
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;">平均分</td>
+                <td colspan="2" style="border: 1px solid black;">90</td>
+                <!-- <td style="border: 1px solid black;">98</td>
+                <td></td> -->
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;">及格率</td>
+                <td colspan="2" style="border: 1px solid black;">80%</td>
+                <!-- <td style="border: 1px solid black;">98</td>
+                <td></td> -->
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
