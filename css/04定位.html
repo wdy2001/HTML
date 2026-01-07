@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: pink;
+        }
+        .box1{ 
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            left: 50px;
+            top: 50px;
+        }
+        .box2{ 
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: fixed;
+            /* left: 500px; */
+            top: 100px;
+        }
+        .box3{ 
+            width: 100px;
+            height: 100px;
+            background-color: gold;
+            position: fixed;
+            left: 500px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 定位 
+        postion
+            static   默认
+            absolute 绝对，原位置空出
+            relative 相对,相对元素原本的位置，原位置不被占用
+            fixed    相对,相对浏览器窗口位置
+
+        left   左
+        right  右
+        top    上
+        bottom 下
+    -->
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</body>
+</html>
